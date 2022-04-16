@@ -1,0 +1,22 @@
+GET http://localhost:5000/health_check
+Accept: application/json
+
+###
+POST http://localhost:5000/predict
+Accept: application/json
+Content-Type: application/json
+
+{
+  "sentence_1": "한 남자가 양파를 자르고 있다.",
+  "sentence_2": "한 남자가 양파를 잘랐다."
+}
+
+###
+POST http://localhost:5000/predict
+Accept: application/json
+Content-Type: application/json
+
+{
+  "sentence_1": "한 남자가 파스타를 먹고 있다.",
+  "sentence_2": "한 남자가 기타를 치고 있다."
+}
